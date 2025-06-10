@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 style="font-weight: 600; font-size: 1.5rem; color: #72e2ff; position: absolute; left: 2rem; top: 1rem;">MyPortfolio</h1>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <div class="side-navbar">
+      <p style="text-align: right;" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+      </p>
+      <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="#about">About</a></p>
+        <p class="side-navbar-link"><a href="#skills">Skills</a></p>
+        <p class="side-navbar-link"><a href="#projects">Projects</a></p>
+        <p class="side-navbar-link"><a href="#contact">Contact</a></p>
+      </div>
+      
+
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Hi, I'm Monica</h1>
+        <p id="typing-text" class="typing">A passionate Web Developer building beautiful and functional websites.</p>
+        <a href="file:///C:/Users/WELCOME/Downloads/resumedd%20(1).pdf" class="btn">Resume</a>
+        <a href="https://github.com/Monica-Balasubramanian" class="btn">GitHub</a>
+      </div>
+
+    </section>
+    <div>
+      <section id="about" class="about-section">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            Hi! I’m Monica Balasubramanian, a passionate Web Developer with a strong interest in technology and
+            innovation.I am currently pursuing my B.Tech in Information Technology at Chennai Institute of Technology.I
+            enjoy creating clean, user-friendly websites and exploring new technologies.My key areas of interest include
+            web development, machine learning, and Data science.I have worked on projects using HTML, CSS, JavaScript,
+            Python, Java and ReactJs.</p>
+          <p style="align-items: right"> ✔ CloudComputing -NPTEL </p>
+          <p style="align-items: right"> ✔ Introduction to IOT -NPTEL</p>
+          <p style="align-items: right"> ✔ DBMS -NPTEL</p>
+          <p style="align-items: right"> ✔ Algorithm Tool Box-coursera</p>
+          <p style="align-items: right"> ✔ Java Certification - skillRack</p>
+          <p style="align-items: right"> ✔ CCNA 1 - Introduction to cybersecurity - Cisco </p>
+          <p style="align-items: right"> 2-cybersecurity Essentials - Cisco</p>
+          <p style="align-items: right"> 3-Introduction to Networking-Cisco</p>
+        </div>
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: left; padding: 102px;">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Monica Balasubramanian"
+              style="width: 300px; height: 300px; border-radius: 9%; object-fit: s; margin-bottom: 9px;" />
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML </h3>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 90%;"></div>
+          </div>
+          <div class="skill-percentage">90%</div>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+          <div class="skill-percentage"> 90% </div>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+          <div class="skill-percentage">70%</div>
+        </div>
+        <div class="skill-card">
+          <h3>Java</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+          <div class="skill-percentage">90%</div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills-section">
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Python</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+          <div class="skill-percentage">90%</div>
+        </div>
+        <div class="skill-card">
+          <h3>C</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+          <div class="skill-percentage">70%</div>
+        </div>
+        <div class="skill-card">
+          <h3>C++</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+          <div class="skill-percentage">75%</div>
+        </div>
+        <div class="skill-card">
+          <h3>ReactJs</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+          <div class="skill-percentage">60%</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Resume Screening</h3>
+          <p>Resume screening filters candidates based on job criteria.</p>
+          <a href="https://github.com/Monica-Balasubramanian/-Resume-Screening-Candidate-Profiling" class="btn-small"> Demo </a>
+          <a href="file:///C:/Users/WELCOME/Desktop/new/lr2.html" class="btn-small"> Code </a>
+        </div>
+        <div class="project-card">
+          <h3>E-commerce Website</h3>
+          <p>E-commerce website for finding your fav things .</p>
+          <a href="file:///C:/Users/WELCOME/Desktop/success/e-com/index.html" class="btn-small">Demo</a>
+          <a href="file:///C:/Users/WELCOME/Desktop/success/e-com/index.html" class="btn-small"> Code </a>
+        </div>
+        <div class="project-card">
+          <h3>ATM Website</h3>
+          <p>E-commerce website for finding your fav things .</p>
+          <a href="https://zvh3f2ho4mzsjq3vuxwhgr.streamlit.app/" class="btn-small">Demo</a>
+          <a href="https://github.com/Monica-Balasubramanian/ATM" class="btn-small"> Code </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" ; class="contact-left"
+          style="background-color: #2c2f52; display: flex;  flex-direction: column;  padding: 2vw 5vw; width: 70%;  max-width: 600px;  border-radius: 20px;">
+          <div class="contact-left-title">
+            <h2 style="color: #f2f4f7;">Get in touch</h2>
+            <hr>
+          </div>
+          <input type="hidden" name="access_key" value="a66b855c-ec61-4997-8194-911c9d969f7c">
+          <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+          <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+          <textarea name="message" placeholder="Your message" class="contact-input" required></textarea>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+      </div>
+    </section>
+  </main>
+  <div class="footer" >
+    <div class="footer-container">
+      <div class="footer-box-1">
+        <h2 class="headingText"></h2>
+        <p>Portfolio</p>
+        <div class="footer-icon-container">
+          <i class="fa-brands fa-instagram" style="color: white;"></i>
+          <i class="fa-brands fa-twitter" style="color: white;"></i>
+          <i class="fa-brands fa-facebook" style="color: white;"></i>
+        </div>
+      </div>
+    </div>
+    <p>@2025Monica.com</p>
+  </div>
+
+
+  <script src="portofolio.js"></script>
+
+</body>
+
+</html>
